@@ -1,8 +1,7 @@
 import {TitleMain} from "./TitleMain";
+import {TitleSub} from "./TitleSub";
 
-const Titles = {
+export {
   TitleMain,
-  
+  TitleSub,
 }
-
-export default Titles

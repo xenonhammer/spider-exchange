@@ -1,13 +1,13 @@
 import React from 'react';
 import {ITitleMain} from "../interfaces";
+import cn from 'classnames';
 
-
-export const TitleMain: React.FC<ITitleMain> = ({type, children}) => {
+export const TitleMain: React.FC<ITitleMain> = ({type, children, className}) => {
   const jsx = React.createElement;
   return jsx(
     type,
     {
-      className: "text-3xl p-[30px]",
+      className: cn( "text-3xl p-[30px]", className),
     },
     children
   )
